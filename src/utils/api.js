@@ -84,7 +84,7 @@ async function addContact({ name, tag }) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({}),
+    body: JSON.stringify({ name, tag }),
   });
 
   const responseJson = response.json();
